@@ -14,13 +14,26 @@
 
 <body>
     <header>
-        <div class="navbar w-10/12 mx-auto">
-            <div class="flex-1">
-                <img src="Images/Group 40071 (2).png" alt="">
-                <a class="btn btn-ghost text-xl font-bold">Hero <span class="text-[#FF4B00]">Travel</span></a>
+        <div class="flex justify-between items-center w-10/12 mx-auto py-4">
+            <div class="flex items-center justify-between w-full ">
+                <div class="flex">
+                    <img src="Images/Group 40071 (2).png" alt="">
+                    <a class="btn btn-ghost text-xl font-bold">Hero <span class="text-[#FF4B00]">Travel</span></a>
+                </div>
+                <div>
+                    <img src="Images/icon/menu.png" alt="" class=" w-10 h-10 md:hidden">
+                    <!-- responsive manus -->
+                    <ul class=" hidden hover:block absolute right-7 top-20 bg-green-200 p-4 rounded-md">
+                        <li><a href=""><span class="text-[#FF4B00] text-lg font-semibold">Home</span></a></li>
+                        <li><a class="text-lg" href="">Packages</a></li>
+                        <li><a class="text-lg" href="">Testimonial</a></li>
+                        <li><a class="text-lg" href="">Blogs</a></li>
+                        <li><a class="text-lg" href="">Contact</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="flex-none">
-                <ul class="menu menu-horizontal items-center px-1">
+                <ul class="gap-6 items-center hidden md:inline-flex">
                     <li><a href=""><span class="text-[#FF4B00] text-lg font-semibold">Home</span></a></li>
                     <li><a class="text-lg" href="">Packages</a></li>
                     <li><a class="text-lg" href="">Testimonial</a></li>
@@ -34,45 +47,63 @@
     <main>
         <!-- hero section -->
         <div class="rounded-2xl">
-            <div class="hero h-screen w-10/12 mx-auto bg-cover"
-                style="background-image: url(Images/Group\ 13\ \(1\)\ \(1\).png); ">
-                <div class="hero-overlay bg-opacity-60"></div>
-                <div class="hero-content text-neutral-content text-center">
-                    <div class=" flex flex-col items-center gap-10">
+            <div class="hero h-screen w-10/12 mx-auto bg-cover  bg-no-repeat rounded-xl "
+                style="background-image: url(Images/Group\ 13\ \(1\)\ \(1\).png); opacity: 10px; ">
+                <div class="hero-overlay bg-opacity-30"></div>
+                <div class="flex flex-col text-center text-white">
+                    <div class=" flex flex-col items-center pb-4 md:pb-0  md:gap-10">
                         <div>
-                            <h1 class="mb-5 text-5xl font-bold">Explore Your Travel</h1>
-                            <p class="mb-5 max-w-2xl">
+                            <h1 class="mb-5 text-3xl md:text-5xl font-bold">Explore Your Travel</h1>
+                            <p class="mb-5 text-sm md:text-base md:max-w-2xl">
                                 Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
                                 exercitationem
                                 quas oram1 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                             </p>
                         </div>
-                        <div class="flex gap-6 justify-center bg-gray-300 p-4 rounded-md bg-opacity-40">
-                            <div class="flex gap-5 h-12">
-                                <select class="text-gray-500  px-3 outline-none rounded-md">
+                        <div
+                            class="flex gap-6 justify-center bg-gray-300 p-4 rounded-md bg-opacity-40 w-11/12 h-[250px] md:h-auto ">
+                            <div class="flex flex-col md:flex-row gap-5 w-full h-12">
+                                <select class="text-gray-500  py-2  px-3 outline-none rounded-md">
                                     <option value="">Where go</option>
                                     <option value="">Cox, Bazar</option>
                                     <option value="">Sundar ban</option>
                                 </select>
 
-                                <select class="text-gray-500 px-3 outline-none rounded-md">
+                                <select class="text-gray-500 py-2 px-3 outline-none rounded-md">
                                     <option value="">When</option>
                                     <option value="">Cox, Bazar</option>
                                     <option value="">Sundar ban</option>
                                 </select>
 
-                                <select class="text-gray-500 px-3 outline-none rounded-md">
+                                <select class="text-gray-500 py-2 px-3 outline-none rounded-md">
                                     <option value="">Select type</option>
                                     <option value="">Cox, Bazar</option>
                                     <option value="">Sundar ban</option>
                                 </select>
-                                <button class="text-white  px-6  bg-[#FF4B00]">Find Now</button>
+                                <button class="text-white py-2  px-6  bg-[#FF4B00]">Find Now</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- popular tour section -->
+        <div class="hero bg-base-200 min-h-screen">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+                    class="max-w-sm rounded-lg shadow-2xl" />
+                <div>
+                    <h1 class="text-5xl font-bold">Box Office News!</h1>
+                    <p class="py-6">
+                        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                        quasi. In deleniti eaque aut repudiandae et a id nisi.
+                    </p>
+                    <button class="btn btn-primary">Get Started</button>
+                </div>
+            </div>
+        </div>
+
     </main>
 </body>
 
