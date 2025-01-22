@@ -11,37 +11,64 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
+
 <body>
     <header>
         <div class="navbar w-10/12 mx-auto">
             <div class="flex-1">
                 <img src="Images/Group 40071 (2).png" alt="">
-                <a class="btn btn-ghost text-xl font-semibold">Hero <span class="text-[#FF4B00]">Travel</span></a>
+                <a class="btn btn-ghost text-xl font-bold">Hero <span class="text-[#FF4B00]">Travel</span></a>
             </div>
             <div class="flex-none">
                 <ul class="menu menu-horizontal items-center px-1">
-                    <li><a href=""><span class="text-[#FF4B00] text-lg ">Home</span></a></li>
-                    <li><a text-lg href="">Packages</a></li>
-                    <li><a text-lg href="">Testimonial</a></li>
-                    <li><a text-lg href="">Blogs</a></li>
-                    <li><a text-lg href="">Contact</a></li>
+                    <li><a href=""><span class="text-[#FF4B00] text-lg font-semibold">Home</span></a></li>
+                    <li><a class="text-lg" href="">Packages</a></li>
+                    <li><a class="text-lg" href="">Testimonial</a></li>
+                    <li><a class="text-lg" href="">Blogs</a></li>
+                    <li><a class="text-lg" href="">Contact</a></li>
                 </ul>
             </div>
         </div>
     </header>
     <!-- main section start -->
     <main>
-        <div class="hero min-h-screen w-10/12 mx-auto"
-            style="background-image: url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp);">
-            <div class="hero-overlay bg-opacity-60"></div>
-            <div class="hero-content text-neutral-content text-center">
-                <div class="max-w-md">
-                    <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-                    <p class="mb-5">
-                        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                        quasi. In deleniti eaque aut repudiandae et a id nisi.
-                    </p>
-                    <button class="btn btn-primary">Get Started</button>
+        <div class="rounded-2xl">
+            <div class="hero h-screen w-10/12 mx-auto bg-cover rounded-3xl"
+                style="background-image: url(Images/Group\ 13\ \(1\)\ \(1\).png); ">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-neutral-content text-center">
+                    <div class=" flex flex-col items-center gap-10">
+                        <div>
+                            <h1 class="mb-5 text-5xl font-bold">Explore Your Travel</h1>
+                            <p class="mb-5 max-w-2xl">
+                                Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                                exercitationem
+                                quas oram1 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <div class="flex gap-6 justify-center">
+                            <div class="flex gap-5 h-12">
+                                <select class="text-gray-500 p-3 rounded-md">
+                                    <option value="">Where go</option>
+                                    <option value="">Cox, Bazar</option>
+                                    <option value="">Sundar ban</option>
+                                </select>
+
+                                <select class="text-gray-500 p-3 rounded-md">
+                                    <option value="">When</option>
+                                    <option value="">Cox, Bazar</option>
+                                    <option value="">Sundar ban</option>
+                                </select>
+
+                                <select class="text-gray-500 p-3 rounded-md">
+                                    <option value="">Select type</option>
+                                    <option value="">Cox, Bazar</option>
+                                    <option value="">Sundar ban</option>
+                                </select>
+                                <button class="text-white py-3 px-6  bg-[#FF4B00]">Find Now</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
